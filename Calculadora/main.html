@@ -1,0 +1,116 @@
+<!---Ventana-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!---Icono de pestaña-->
+    <link rel="icon" href="images/calculadora.png" type="image/png">
+    <!---Título de la pestaña-->
+    <title>Calculadora</title>
+</head>
+
+<body class = "cuerpo">
+   
+    <!---Título-->
+    <h1 class = "titulo">CALCULADORA BÁSICA</h1>
+
+    <!---Subtitulo-->
+    <p class = "subtitulo">Suma, resta, multiplicación, división</p>
+
+    <!---Rectangulos-->
+    <div class="rectanguloIzquierdo"></div>
+    <div class="rectanguloDerecho"></div>
+    
+    <center>
+        <div>
+            <input type="text" id = "pantalla">
+        </div>
+    
+        <br/>
+        <!---Botones-->
+        <div class = "contenedor">
+            <button class = "boton1" onclick="muestra('1')">1</button>
+            <button class = "boton2" onclick="muestra('2')">2</button>
+            <button class = "boton3" onclick="muestra('3')">3</button>
+            <button class = "division" onclick="muestra('/')">÷</button><br/>
+            <button class = "boton4" onclick="muestra('4')">4</button>
+            <button class = "boton5" onclick="muestra('5')">5</button>
+            <button class = "boton6" onclick="muestra('6')">6</button>
+            <button class = "multiplicacion" onclick="muestra('*')">x</button><br/>
+            <button class = "boton7" onclick="muestra('7')">7</button>
+            <button class = "boton8" onclick="muestra('8')">8</button>
+            <button class = "boton9" onclick="muestra('9')">9</button>
+            <button class = "resta" onclick="muestra('-')">-</button><br/>
+            <button class = "borrar" onclick="borrar()">C</button>
+            <button class = "boton0" onclick="muestra('0')">0</button>
+            <button class = "respuesta" onclick="Operacion('=')">=</button>
+            <button class = "suma" onclick="muestra('+')">+</button>
+        </div>
+
+    </center>
+
+    <!---JS-->
+    <script>
+
+        let valor = ''; //Para 1,2,3,... y +, -,...
+        let operacion = ''; //Pues la operacion que se hace
+
+        //Para mostrar en el input
+        function muestra(numero){
+            let user = document.getElementById('pantalla').value;
+            pantalla.value += numero; //Concatena lo que se agrega
+            valor += numero; // Agrega el número al valor actual
+        }
+
+        //Para borrar lo que tenemos en el input
+        function borrar(){
+            let pantalla = document.getElementById('pantalla');
+            pantalla.value = ''; // Limpia el contenido del campo de entrada
+            valor = ''; // Restablece la variable valor
+        }
+        //Función para operaciones básicas
+        function Operacion(operador) {
+            //Cuando le das =
+            if (operador === '='){
+                let pantalla = document.getElementById('pantalla');
+
+                if (valor.trim() === ''){
+                    pantalla.value = ''; // No hay nada, pantalla.value =, asignamos el valor de la panatalla
+                } 
+                else{
+                    pantalla.value = eval(valor);
+                }
+            }
+            //Para suma
+            else if(operador === '+'){
+                operacion = '+'; 
+                pantalla.value += operador; //Con esto se muestra en tiempo real los botones presionados
+                valor += operador;
+            }
+            //Para resta
+            else if(operador === '-'){
+                operacion = '-';
+                pantalla.value += operador;
+                valor += operador;
+            }
+            //Para multiplicación
+            else if(operador === '*'){
+                operacion = '*';
+                pantalla.value += operador;
+                valor += operador;
+            }
+            //Para división
+            else if(operador === '÷'){
+                operacion = '/';
+                pantalla.value += operador;
+                valor += operador;
+            }
+        }
+        
+    </script>
+</body>
+
