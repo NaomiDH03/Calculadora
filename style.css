@@ -1,0 +1,483 @@
+
+body{
+    background-color: #FDFEFE;
+}
+
+/*Input*/
+#pantalla{
+    width: 95%; /*ancho*/
+    padding: 12px 18px; /*Modificar ancho y alto "12" es de ancho, "18" de largo*/
+    background-color: #F4F6F6; /*Color de fondo*/
+    border-color:#F4F6F6; /*Color de borde*/
+}
+
+/*BOTONES*/
+
+.contenedor{
+    white-space: nowrap; /* Para que todos queden en la misma línea */
+}
+
+.boton1{
+    background-color: #EBC3FF; /*Color del botón*/
+    font-size: 24px; /*Tamaño*/
+    padding: 1px 32px; /*Para hacerlo más rectangular*/
+    border-radius: 6px; /*Para el redondeo de las esquinas*/
+    border: 2px solid #EBC3FF;
+    width: 25%;/*ancho del boton*/
+    color: white;
+    margin: 5px; /* Establece el espacio entre los botones */
+    /*transition-duration: 0.4s;*/
+}
+
+/*"hover" se usa para cambiar el estilo del botón cuanto poner el mouse sobre él*/
+.boton1:hover {
+    background-color: #FDEDEC ; /*Color de fondo de la transición cuando está el mouse sobre el botón*/
+    color: black; /*Color en el que la letra se pone*/
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+/*Para el efecto del clic se usa "active" que representa que un elemento es activado por el usuario*/ 
+.boton1:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton2{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px; 
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+.boton2:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton2:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton3{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF; 
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton3:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton3:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton4{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    margin: 5px; /* Establece el espacio entre los botones */
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton4:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton4:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton5{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF; 
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton5:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton5:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton6{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF; 
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton6:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton6:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton7{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    margin: 5px; /* Establece el espacio entre los botones */
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton7:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton7:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton8{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton8:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton8:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton9{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton9:hover {
+    background-color: #FDEDEC ; 
+    color: black;
+    border: 2px solid #FDEDEC; 
+    /*opacity: 1*/
+}
+
+
+.boton9:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.boton0{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.boton0:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.boton0:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.suma{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.suma:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.suma:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.resta{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.resta:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.resta:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.multiplicacion{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px;
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.multiplicacion:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+
+.multiplicacion:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.division{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px; 
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.division:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+.division:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.respuesta{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px; 
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    /*transition-duration: 0.4s;*/
+}
+
+
+.respuesta:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+.respuesta:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.borrar{
+    background-color: #EBC3FF; 
+    font-size: 24px; 
+    padding: 1px 32px; 
+    border-radius: 6px; 
+    border: 2px solid #EBC3FF;
+    width: 25%;
+    color: white;
+    margin: 5px; /* Establece el espacio entre los botones */
+    /*transition-duration: 0.4s;*/
+}
+
+
+.borrar:hover {
+    background-color: #FDEDEC ; 
+    color: black; 
+    border: 2px solid #FDEDEC;
+    /*opacity: 1*/
+}
+
+.borrar:active {
+    background-color: #FDEDEC;
+    box-shadow: 0 5px #FDEDEC;
+    transform: translateY(0px);
+}
+
+.titulo{
+    display: flex; /* "flex" para crera caja flexible, editar elementos más fácil*/
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    font-family: "Lucida Console", "Courier New", monospace;  /* Cambia estilo de letra */
+
+}
+.subtitulo{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Para que quede cnetrado todo */
+.cuerpo{
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 80vh; /* Altura que ocupa en la pantalla */
+   
+}
+
+.rectanguloIzquierdo {
+    width: 20%; 
+    height: 100vh;
+    background-color: #F5B7B1 ; 
+    position: absolute; /* Posición absoluta para superponerlo */
+    top: 0;
+    left: 0; /* Ajusta el rectángulo a la izquierda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectanguloDerecho {
+    width: 20%;  
+    height: 100vh; 
+    background-color: #F5B7B1 ; 
+    position: absolute; 
+    top: 0;
+    right: 0; /* Ajusta el rectángulo a la derecha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
